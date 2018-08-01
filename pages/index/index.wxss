@@ -1,21 +1,83 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.page-body image{
+	width:100%;
+	height:400rpx;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+swiper{
+	height:400rpx;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.product_list image{
+	width:330rpx;
+	height:235rpx;
+	border-radius:10rpx;
+	overflow:hidden;
 }
-
-.usermotto {
-  margin-top: 200px;
+.product_show{
+	padding:2%;
+	overflow:hidden;
+}
+.product_list{
+	width:46%;
+	height:auto;
+	margin:2%;
+	float:left;
+	overflow:hidden;
+	text-align:center;
+	font-size:28rpx;
+	color:#333;
+	margin-bottom:25rpx;
+	overflow:hidden;
+	border-radius:10rpx;
+}
+.product_tlt{
+	font-size:32rpx;
+	color:#333;
+	text-align:center;
+	margin:50rpx auto 20rpx;
+	position:relative;
+	width:400rpx;
+	height:90rpx;
+}
+.product_tlt image{
+	top:0rpx;
+	left:0rpx;
+	width:400rpx;
+	height:90rpx;
+}
+.tilte{
+	position:absolute;
+	top:15rpx;
+	left:140rpx;
+	color:#fff;
+}
+.product_tlts{
+	font-size:32rpx;
+	color:#333;
+	text-align:center;
+	margin:20rpx auto;
+	position:relative;
+	width:400rpx;
+	height:67rpx;
+}
+.about{
+	padding:0rpx 4%;
+}
+.about image{
+	width:100%;
+	height:300rpx;
+}
+.about text{
+	font-size:28rpx;
+	color:#333;
+}
+.more{
+	width:190rpx;
+	height:42rpx;
+	border-radius:30rpx;
+	border:1rpx solid #abcbba;
+	font-size:20rpx;
+	text-align:center;
+	line-height:44rpx;
+	margin:15rpx auto 50rpx;
+	color:#abcbba;
 }

@@ -1,12 +1,43 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/Index/index",
+    "pages/product/product",
+    "pages/About/about",
+    "pages/Contact/contact",
+    "pages/productShow/productShow",
+    "pages/map/map"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#abcbba",
+    "navigationBarTitleText": "首页",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/Index/index",
+      "text": "首页",
+      "iconPath":"/images/navbar1.jpg",
+      "selectedIconPath":"/images/navbar1-a.jpg"
+    },{
+      "pagePath":"pages/product/product",
+      "text": "产品展示",
+      "iconPath":"/images/navbar2.jpg",
+      "selectedIconPath":"/images/navbar2-a.jpg"
+    }, {
+      "pagePath":"pages/About/about",
+      "text": "关于我们",
+      "iconPath":"/images/navbar3.jpg",
+      "selectedIconPath":"/images/navbar3-a.jpg"
+    }, 
+    {
+      "pagePath":"pages/Contact/contact",
+      "text": "联系我们",
+      "iconPath":"/images/navbar4.jpg",
+      "selectedIconPath":"/images/navbar4-a.jpg"
+    }],
+    "borderStyle": "#505050",
+    "color":"#666",
+    "selectedColor":"#abcbba"
   }
 }

@@ -1,13 +1,71 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper
+        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+</view>
+
+<view class="product">
+  <view class="product_tlt">
+      <image src="/images/tlt_bg.png"></image>
+      <view class="tilte">产品展示</view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="product_show">
+    <view class="product_list" bindtap="product">
+      <image src="/images/index1.jpg"></image>
+      <text>包装盒一</text>
+    </view>
+    <view class="product_list" bindtap="product">
+      <image src="/images/index2.jpg"></image>
+      <text>包装盒二</text>
+    </view>
+    <view class="product_list" bindtap="product">
+      <image src="/images/index3.jpg"></image>
+      <text>包装盒三</text>
+    </view>
+    <view class="product_list" bindtap="product">
+      <image src="/images/index2.jpg"></image>
+      <text>包装盒三</text>
+    </view>
+    <view class="product_list" bindtap="product">
+      <image src="/images/index3.jpg"></image>
+      <text>包装盒三</text>
+    </view>
+    <view class="product_list" bindtap="product">
+      <image src="/images/index1.jpg"></image>
+      <text>包装盒三</text>
+    </view>
+    <view class="product_list" bindtap="product">
+      <image src="/images/index2.jpg"></image>
+      <text>包装盒三</text>
+    </view>
+    <view class="product_list" bindtap="product">
+      <image src="/images/index3.jpg"></image>
+      <text>包装盒三</text>
+    </view>
   </view>
+</view>
+
+<view class="more" bindtap="more">
+  <text>查看更多</text><text> > </text>
+</view>
+<view class="product_tlt">
+      <image src="/images/tlt_bg.png"></image>
+      <view class="tilte">关于我们</view>
+  </view>
+<view class="about" bindtap="about">
+  
+  <image src="/images/about.jpg">
+  </image>
+  <text>
+    关于我们关于我，们关于我们关于，我们关于我们关于。我们关于我们关于我们关于我们关于我，们关于我们关于我们关于我们关于我们关，于
+  </text>
 </view>

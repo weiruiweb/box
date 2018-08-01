@@ -1,0 +1,20 @@
+.product_list image{
+	width:330rpx;
+	height:235rpx;
+	border-radius:10rpx;
+}
+.product_show{
+	padding:2%;
+	overflow:hidden;
+}
+.product_list{
+	width:46%;
+	height:auto;
+	margin:2%;
+	float:left;
+	overflow:hidden;
+	text-align:center;
+	font-size:28rpx;
+	color:#333;
+	margin-bottom:25rpx;
+}

@@ -1,0 +1,46 @@
+<!--about.wxml-->
+<view class="about_sort flexRowBetween">
+	<view class="tab_click {{currentId == 0?'this_tab':''}}" data-id="0" bindtap="tab">
+		企业文化
+	</view>
+	<view class="tab_click {{currentId == 1?'this_tab':''}}" data-id="1" bindtap="tab">
+		环境展示
+	</view>
+	<view class="tab_click {{currentId == 2?'this_tab':''}}" data-id="2" bindtap="tab">
+		服务理念
+	</view>
+</view>
+<view class="about_cont" style="{{currentId == 0?'display:block':'display:none'}}">
+	
+	<image src="/images/banner2.jpg"></image>
+	<view class="about_tlt">
+		企业文化
+	</view>
+	<view class="about_txt">
+		关于我们关于，我们关于我们，关于我们。关于我们关于我们关于我们关于我们，关于我们关于我们关于我们关于我们。关于我们关，于我们关
+		关于我们关于，我们关于我们，关于我们。关于我们关于我们关于我们关于我们，关于我们关于我们关于我们关于我们。关于我们关，于我们关
+	</view>
+</view>
+<view class="about_cont" style="{{currentId == 1?'display:block':'display:none'}}">
+	
+	<image src="/images/banner2.jpg"></image>
+	<view class="about_tlt">
+		环境展示
+	</view>
+	<view class="about_txt">
+		关于我们关于，我们关于我们，关于我们。关于我们关于我们关于我们关于我们，关于我们关于我们关于我们关于我们。关于我们关，于我们关
+		关于我们关于，我们关于我们，关于我们。关于我们关于我们关于我们关于我们，关于我们关于我们关于我们关于我们。关于我们关，于我们关
+	</view>
+</view>
+<view class="about_cont"  style="{{currentId == 2?'display:block':'display:none'}}">
+	
+	<image src="/images/banner2.jpg"></image>
+	<view class="about_tlt">
+		服务理念
+	</view>
+	<view class="about_txt">
+		关于我们关于，我们关于我们，关于我们。关于我们关于我们关于我们关于我们，关于我们关于我们关于我们关于我们。关于我们关，于我们关
+		关于我们关于，我们关于我们，关于我们。关于我们关于我们关于我们关于我们，关于我们关于我们关于我们关于我们。关于我们关，于我们关
+	</view>
+</view>
+

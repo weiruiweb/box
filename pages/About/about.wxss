@@ -1,0 +1,36 @@
+.about_sort{
+	height:80rpx;
+	padding:10rpx 60rpx;
+	line-height:80rpx;
+}
+.tab_click{
+	font-size:30rpx;
+	color:#333;
+	
+	text-align:center;
+}
+.this_tab{
+	color:#bdd9cb;
+	border-bottom:solid 2rpx #bdd9cb;
+}
+.about_cont{
+	padding:0rpx 24rpx;
+	margin-top:20rpx;
+}
+.about_cont image{
+	width:702rpx;
+	height:366rpx;
+}
+.about_tlt{
+	font-size:32rpx;
+	color:#262626;
+	line-height:100rpx;
+}
+.about_txt{
+	font-size:28rpx;
+	line-height:36rpx;
+	font-size:#666;
+}
+.about_cont{
+	display:none;
+}

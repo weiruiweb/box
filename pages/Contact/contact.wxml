@@ -1,0 +1,25 @@
+<!--contact.wxml-->
+<view class="contact_banner">
+	<image src="/images/banner3.jpg"></image>
+</view>
+<view class="contact_cont">
+	<view class="company_name">
+		包装盒公司
+	</view>
+	<view class="company_name">
+		029-457897894974
+	</view>
+	<view class="company_name">
+		西纯粹西安纯粹
+	</view>
+</view>
+<view class="daohang flexRowBetween">
+	<view class="map" bindtap="map">
+		<image src="/images/map.jpg"></image>
+		<text>一键导航</text>
+	</view>
+	<view class="phone" bindtap="calling">
+		<image src="/images/phone.jpg"></image>
+		<text>一键拨号</text>
+	</view>
+</view>

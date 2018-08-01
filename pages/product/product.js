@@ -11,5 +11,10 @@ Page({
         return util.formatTime(new Date(log))
       })
     })
+  },
+  product:function(){
+    wx.navigateTo({
+      url:'/pages/productShow/productShow'
+    })
   }
 })
