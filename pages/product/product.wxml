@@ -1,35 +1,9 @@
 <!--product.wxml-->
 <view class="product_show">
-    <view class="product_list" bindtap="product">
-      <image src="/images/index1.jpg"></image>
-      <text>包装盒一</text>
+  <block wx:for="{{web_mainData}}" wx:key="id">
+    <view class="product_list" data-path="/pages/productShow/productShow?id={{item.id}}" bindtap="intoPath">
+      <image src="{{item.mainImg[0].url}}"></image>
+      <text>{{item.title}}</text>
     </view>
-    <view class="product_list" bindtap="product">
-      <image src="/images/index2.jpg"></image>
-      <text>包装盒二</text>
-    </view>
-    <view class="product_list" bindtap="product">
-      <image src="/images/index3.jpg"></image>
-      <text>包装盒三</text>
-    </view>
-    <view class="product_list" bindtap="product">
-      <image src="/images/index2.jpg"></image>
-      <text>包装盒三</text>
-    </view>
-    <view class="product_list" bindtap="product">
-      <image src="/images/index3.jpg"></image>
-      <text>包装盒三</text>
-    </view>
-    <view class="product_list" bindtap="product">
-      <image src="/images/index1.jpg"></image>
-      <text>包装盒三</text>
-    </view>
-    <view class="product_list" bindtap="product">
-      <image src="/images/index2.jpg"></image>
-      <text>包装盒三</text>
-    </view>
-    <view class="product_list" bindtap="product">
-      <image src="/images/index3.jpg"></image>
-      <text>包装盒三</text>
-    </view>
-  </view>
+  </block>
+</view>

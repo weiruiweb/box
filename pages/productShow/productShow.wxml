@@ -1,13 +1,15 @@
 <!--contact.wxml-->
 <view class="contact_banner">
-	<image src="/images/banner3.jpg"></image>
+	<image src="{{web_mainData.info.data[0].bannerImg[0].url}}"></image>
 </view>
 <view class="contact_cont">
 	<view class="company_name">
-		包装盒公司
+		{{web_mainData.info.data[0].title}}
 	</view>
 </view>
 <view class="product_detail">
-	<view class="text2">        美味详情美味详情，美味详情美味详，情美味详情美味详情美味详情美味。详情美味详，情美味详情美味，详情美</view>
-	<view class="text2">        美味详情美味详情，美味详情美味详，情美味详情美味详情美味详情美味。详情美味详，情美味详情美味，详情美</view>
+	<view class="content ql-editor" style="color:#666;">
+		<import src="../../wxParse/wxParse.wxml"/>
+	    <template is="wxParse" data="{{wxParseData:web_mainData.content}}"/>
+	</view>	
 </view>

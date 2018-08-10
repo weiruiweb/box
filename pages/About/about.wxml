@@ -1,46 +1,26 @@
 <!--about.wxml-->
 <view class="about_sort flexRowBetween">
-	<view class="tab_click {{currentId == 0?'this_tab':''}}" data-id="0" bindtap="tab">
+	<view class="tab_click {{num == 385?'this_tab':''}}" data-num="385" bindtap="menuClick">
 		企业文化
 	</view>
-	<view class="tab_click {{currentId == 1?'this_tab':''}}" data-id="1" bindtap="tab">
+	<view class="tab_click {{num == 386?'this_tab':''}}" data-num="386" bindtap="menuClick">
 		环境展示
 	</view>
-	<view class="tab_click {{currentId == 2?'this_tab':''}}" data-id="2" bindtap="tab">
+	<view class="tab_click {{num == 387?'this_tab':''}}" data-num="387" bindtap="menuClick">
 		服务理念
 	</view>
 </view>
-<view class="about_cont" style="{{currentId == 0?'display:block':'display:none'}}">
+<view class="about_cont" >
 	
-	<image src="/images/banner2.jpg"></image>
+	<image src="{{web_mainData.info.data[0].bannerImg[0].url}}"></image>
 	<view class="about_tlt">
-		企业文化
+		{{web_mainData.info.data[0].title}}
 	</view>
 	<view class="about_txt">
-		关于我们关于，我们关于我们，关于我们。关于我们关于我们关于我们关于我们，关于我们关于我们关于我们关于我们。关于我们关，于我们关
-		关于我们关于，我们关于我们，关于我们。关于我们关于我们关于我们关于我们，关于我们关于我们关于我们关于我们。关于我们关，于我们关
-	</view>
-</view>
-<view class="about_cont" style="{{currentId == 1?'display:block':'display:none'}}">
-	
-	<image src="/images/banner2.jpg"></image>
-	<view class="about_tlt">
-		环境展示
-	</view>
-	<view class="about_txt">
-		关于我们关于，我们关于我们，关于我们。关于我们关于我们关于我们关于我们，关于我们关于我们关于我们关于我们。关于我们关，于我们关
-		关于我们关于，我们关于我们，关于我们。关于我们关于我们关于我们关于我们，关于我们关于我们关于我们关于我们。关于我们关，于我们关
-	</view>
-</view>
-<view class="about_cont"  style="{{currentId == 2?'display:block':'display:none'}}">
-	
-	<image src="/images/banner2.jpg"></image>
-	<view class="about_tlt">
-		服务理念
-	</view>
-	<view class="about_txt">
-		关于我们关于，我们关于我们，关于我们。关于我们关于我们关于我们关于我们，关于我们关于我们关于我们关于我们。关于我们关，于我们关
-		关于我们关于，我们关于我们，关于我们。关于我们关于我们关于我们关于我们，关于我们关于我们关于我们关于我们。关于我们关，于我们关
+		<view class="content ql-editor" style="color:#666;">
+			<import src="../../wxParse/wxParse.wxml"/>
+		    <template is="wxParse" data="{{wxParseData:web_mainData.content}}"/>
+		</view>	
 	</view>
 </view>
 

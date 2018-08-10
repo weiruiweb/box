@@ -31,6 +31,3 @@
 	line-height:36rpx;
 	font-size:#666;
 }
-.about_cont{
-	display:none;
-}

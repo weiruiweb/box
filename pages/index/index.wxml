@@ -4,9 +4,9 @@
       <swiper
         indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
         interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
-        <block wx:for="{{background}}" wx:key="*this">
+        <block wx:for="{{web_sliderData.info.data[0].mainImg}}" wx:key="id">
           <swiper-item>
-            <image src="{{item}}"></image>
+            <image src="{{item.url}}"></image>
           </swiper-item>
         </block>
       </swiper>
@@ -18,54 +18,27 @@
       <image src="/images/tlt_bg.png"></image>
       <view class="tilte">产品展示</view>
   </view>
-  <view class="product_show">
-    <view class="product_list" bindtap="product">
-      <image src="/images/index1.jpg"></image>
-      <text>包装盒一</text>
-    </view>
-    <view class="product_list" bindtap="product">
-      <image src="/images/index2.jpg"></image>
-      <text>包装盒二</text>
-    </view>
-    <view class="product_list" bindtap="product">
-      <image src="/images/index3.jpg"></image>
-      <text>包装盒三</text>
-    </view>
-    <view class="product_list" bindtap="product">
-      <image src="/images/index2.jpg"></image>
-      <text>包装盒三</text>
-    </view>
-    <view class="product_list" bindtap="product">
-      <image src="/images/index3.jpg"></image>
-      <text>包装盒三</text>
-    </view>
-    <view class="product_list" bindtap="product">
-      <image src="/images/index1.jpg"></image>
-      <text>包装盒三</text>
-    </view>
-    <view class="product_list" bindtap="product">
-      <image src="/images/index2.jpg"></image>
-      <text>包装盒三</text>
-    </view>
-    <view class="product_list" bindtap="product">
-      <image src="/images/index3.jpg"></image>
-      <text>包装盒三</text>
-    </view>
+  <view class="product_show" >
+    <block wx:for="{{web_mainData}}"  wx:key="id">
+      <view class="product_list">
+        <image src="{{item.mainImg[0].url}}" data-path="/pages/productShow/productShow" bindtap="intoPath"></image>
+        <text>{{item.title}}</text>
+      </view>
+    </block>
   </view>
 </view>
 
-<view class="more" bindtap="more">
+<view class="more"  data-path="/pages/product/product" bindtap="intoPathTab">
   <text>查看更多</text><text> > </text>
 </view>
+
 <view class="product_tlt">
       <image src="/images/tlt_bg.png"></image>
       <view class="tilte">关于我们</view>
   </view>
-<view class="about" bindtap="about">
+<view class="about" >
   
-  <image src="/images/about.jpg">
+  <image src="{{web_artData.mainImg[0].url}}" data-path="/pages/About/about" bindtap="intoPathTab">
   </image>
-  <text>
-    关于我们关于我，们关于我们关于，我们关于我们关于。我们关于我们关于我们关于我们关于我，们关于我们关于我们关于我们关于我们关，于
-  </text>
+ 
 </view>

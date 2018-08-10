@@ -1,6 +1,6 @@
 {
   "pages":[
-    "pages/Index/index",
+    "pages/index/index",
     "pages/product/product",
     "pages/About/about",
     "pages/Contact/contact",
@@ -15,7 +15,7 @@
   },
   "tabBar": {
     "list": [{
-      "pagePath": "pages/Index/index",
+      "pagePath": "pages/index/index",
       "text": "首页",
       "iconPath":"/images/navbar1.jpg",
       "selectedIconPath":"/images/navbar1-a.jpg"
