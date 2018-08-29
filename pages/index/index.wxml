@@ -21,7 +21,7 @@
   <view class="product_show" >
     <block wx:for="{{web_mainData}}"  wx:key="id">
       <view class="product_list">
-        <image src="{{item.mainImg[0].url}}" data-path="/pages/productShow/productShow" bindtap="intoPath"></image>
+        <image src="{{item.mainImg[0].url}}" data-path="/pages/productShow/productShow?id={{item.id}}" bindtap="intoPath"></image>
         <text>{{item.title}}</text>
       </view>
     </block>

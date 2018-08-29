@@ -3,39 +3,23 @@ const util = require('../../utils/util.js')
 
 Page({
   data: {
-     markers: [{
-      iconPath: "/images/map.jpg",
-      id: 0,
-      latitude: 23.099994,
-      longitude: 113.324520,
-      width: 50,
-      height: 50
-    }],
-    polyline: [{
-      points: [{
-        longitude: 113.3245211,
-        latitude: 23.10229
-      }, {
-        longitude: 113.324520,
-        latitude: 23.21229
-      }],
-      color:"#FF0000DD",
-      width: 2,
-      dottedLine: true
-    }],
-    controls: [{
-      id: 1,
-      iconPath: '/images/map.jpg',
-      position: {
-        left: 0,
-        top: 300 - 50,
-        width: 50,
-        height: 50
-      },
-      clickable: true
-    }]
+
   },
+
+
   onLoad: function () {
     
-  }
+  },
+
+  click: function (e) {
+    wx.openLocation({
+      latitude: 22.6383880000,
+      longitude: 113.8307190000,
+      height:100,
+      scale: 18,
+      name: '仁彩印刷有限公司',
+      address:'福永街道办凤凰第一工业区兴业一路92号园'
+    })
+  },
+
 })

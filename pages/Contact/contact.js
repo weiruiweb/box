@@ -50,9 +50,17 @@ Page({
   },
 
 
-  calling: function () {
+  calling() {
+    const self = this;
+    var phone = self.data.mainData.contactPhone;
     wx.makePhoneCall({
-        phoneNumber: '18192654258',
+        phoneNumber: phone,
+        success: function () {
+            console.log("拨打电话成功！")
+        },
+        fail: function () {
+            console.log("拨打电话失败！")
+        }
     })
   }
 
