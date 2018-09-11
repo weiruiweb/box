@@ -9,7 +9,7 @@
 	</view>	
 </view>
 <view class="daohang flexRowBetween">
-	<view class="map" bindtap="map">
+	<view class="map" bindtap="intoPath" data-path="/pages/map/map">
 		<image src="/images/map.jpg"></image>
 		<text>一键导航</text>
 	</view>

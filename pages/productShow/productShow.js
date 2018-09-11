@@ -39,25 +39,6 @@ Page({
       });  
     };
     api.articleGet(postData,callback);
-  },
+  }
 
-
-
-
-  
-
-
-
-
-
-   map:function(){
-    wx.navigateTo({
-      url:'/pages/map/map'
-    })
-   },
-   calling: function () {
-    wx.makePhoneCall({
-        phoneNumber: '18192654258',
-    })
-}
 })

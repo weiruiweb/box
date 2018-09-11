@@ -118,8 +118,6 @@ Page({
       self.setData({
         web_sliderData:self.data.sliderData,
       });
-      console.log(self.data.sliderData)
-
     };
     api.labelGet(postData,callback);
   },

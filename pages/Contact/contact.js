@@ -43,26 +43,21 @@ Page({
     api.articleGet(postData,callback);
   },
 
-  map:function(){
-    wx.navigateTo({
-      url:'/pages/map/map'
-    })
-  },
 
 
-  calling() {
+
+  calling(){
     const self = this;
     var phone = self.data.mainData.contactPhone;
     wx.makePhoneCall({
         phoneNumber: phone,
-        success: function () {
-            console.log("拨打电话成功！")
-        },
-        fail: function () {
-            console.log("拨打电话失败！")
-        }
     })
-  }
+  },
+
+  intoPath(e){
+    const self = this;
+    api.pathTo(api.getDataSet(e,'path'),'nav');
+  },
 
   
 })
